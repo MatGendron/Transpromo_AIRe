@@ -19,6 +19,7 @@ api = tweepy.API(auth)
 ####### data #######
 #################### 
 def go_through(user, V, stack):
+    print(user.friends())
     for friend in user.friends():
         c = [(friend.screen_name, friend.followers_count)]
         if c[0] not in V:
@@ -34,7 +35,7 @@ user = api.get_user("Teko24370144") # source
 
 V = [(user.screen_name, user.followers_count)] # vertices
 
-limit = 6
+limit = 1
 l = 0
 stack = V
 
