@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">Méthodologie de tri des 20 000 000 de liens :</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">- Trier le csv des poids par ordre décroissant</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">- On fabrique un csv avec les comptes qui nous intéressent, en se basant sur : http://ymobactus.miaouw.net/labo-top-politiques.php?mode=followers&amp;liste=tous&amp;tendance=. On a pris les 50 comptes politiques les plus suivis, les 50 médias les plus suivis et les 50 journalistes les plus suivis. Soit 150 comptes au total, soit 150 possibles noeud.</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">- Pour ne pas tout taper à la main : j’enregistre la page web concerné et je fais un script javascript pour tout récupérer</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">- Ajout de 30 autres possibilités suivant le classement décroissant qui ne sont pas déjà présentes sur la liste. Limitation aux 1000 premiers sur 38 000.</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1">Ensuite traitement avec python des CSV</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">On est passé à environ 4048 liens, pour 153 noeuds, et de 20 000 000 à 1 206 000 connexions au total</span></p>
+</body>
+</html>
